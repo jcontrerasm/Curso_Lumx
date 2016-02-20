@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+		<link rel="stylesheet" href="bower_components/lumx/dist/lumx.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="toolbar">
+		        <div class="toolbar__left mr+">
+		            <button class="btn btn--l btn--black btn--icon" lx-ripple>
+		                <i class="mdi mdi-menu"></i>
+		            </button>
+		        </div>
+
+		        <span class="toolbar__label fs-title">Logeout</span>
+	    	</div>
+	    	<div class="menu">
+	    		<lx-tabs>
+			        <lx-tab heading="Inicio">
+			        </lx-tab>
+			        <lx-tab heading="Galeria">
+			        </lx-tab>
+			        <lx-tab heading="Contacto">
+			        </lx-tab>
+			        <lx-tab heading="Musica">
+			        </lx-tab>
+			        <lx-tab heading="Contacto">
+			        </lx-tab>
+			        <lx-tab heading="Musica">
+			        </lx-tab>
+			        <lx-tab heading="Contacto">
+			        </lx-tab>
+			        <lx-tab heading="Musica">
+			        </lx-tab>
+			    </lx-tabs>
+	    	</div>
+		</header>
+
+		<section>
+			<div flex-container="row" class="m+">
+				<div flex-item="6" class="mt++">
+			        <span class="fs-title display-block mb">Circled icon with text</span>
+
+			        <div class="divider divider--dark"></div>
+
+			        <ul class="list mt++">
+			            <li class="list-row list-row--has-separator">
+			                <div class="list-row__primary">
+			                    <i class="icon icon--l icon--grey icon--circled mdi mdi-folder"></i>
+			                </div>
+
+			                <div class="list-row__content">
+			                    <span>Single-line item</span>
+			                </div>
+			            </li>
+			            <li class="list-row list-row--has-separator">
+			                <div class="list-row__primary">
+			                    <i class="icon icon--l icon--blue icon--circled mdi mdi-file"></i>
+			                </div>
+
+			                <div class="list-row__content">
+			                    <span>Single-line item</span>
+			                </div>
+			            </li>
+			            <li class="list-row list-row--has-separator">
+			                <div class="list-row__primary">
+			                    <i class="icon icon--l icon--green icon--circled mdi mdi-plus"></i>
+			                </div>
+
+			                <div class="list-row__content">
+			                    <span>Single-line item</span>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+
+			    <div flex-item="6" class="mt++">
+			        <span class="fs-title display-block mb">Circled icon with text</span>
+
+			        <div class="divider divider--dark"></div>
+
+			        <ul class="list mt++">
+			            <li class="list-row list-row--has-separator">
+			                <div class="list-row__primary">
+			                    <i class="icon icon--l icon--grey icon--circled mdi mdi-folder"></i>
+			                </div>
+
+			                <div class="list-row__content">
+			                    <span>Single-line item</span>
+			                </div>
+			            </li>
+			            <li class="list-row list-row--has-separator">
+			                <div class="list-row__primary">
+			                    <i class="icon icon--l icon--blue icon--circled mdi mdi-file"></i>
+			                </div>
+
+			                <div class="list-row__content">
+			                    <span>Single-line item</span>
+			                </div>
+			            </li>
+			            <li class="list-row list-row--has-separator">
+			                <div class="list-row__primary">
+			                    <i class="icon icon--l icon--green icon--circled mdi mdi-plus"></i>
+			                </div>
+
+			                <div class="list-row__content">
+			                    <span>Single-line item</span>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+			</div>
+			<div class="fab m+" flex-container="row" flex-align="end end">
+				<div flex-item="1">
+		        <button class="fab__primary btn btn--xl btn--blue btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left">
+		            <i class="mdi mdi-android"></i>
+		            <i class="mdi mdi-plus"></i>
+		        </button>
+
+		        <div class="fab__actions fab__actions--up">
+		            <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left"><i class="mdi mdi-delete"></i></button>
+		            <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left"><i class="mdi mdi-package"></i></button>
+		            <button class="btn btn--l btn--black btn--fab" lx-ripple lx-tooltip="Lorem Ipsum" tooltip-position="left"><i class="mdi mdi-pencil"></i></button>
+		        </div>
+		        </div>
+		    </div>
+
+		    <!-- Light theme -->
+			<div class="m+" flex-container="row" flex-align="center center">
+			    <div flex-item="6">
+			    	<span class="fs-title display-block mb">Formulario</span>
+
+			        <div class="divider divider--dark"></div>
+			        <form>
+			            <lx-text-field label="First and last name" fixed-label="true" icon="account">
+			                <input type="text" ng-model="textFields.fixedFirstName">
+			            </lx-text-field>
+
+			            <lx-text-field label="Phone number" fixed-label="true" icon="phone">
+			                <input type="text" ng-model="textFields.fixedLastName">
+			            </lx-text-field>
+
+			            <lx-text-field label="Email address" fixed-label="true" icon="email">
+			                <input type="email" ng-model="textFields.fixedEmail">
+			            </lx-text-field>
+
+			            <lx-text-field label="Location" fixed-label="true" icon="city">
+			                <input type="text" ng-model="textFields.fixedAdress">
+			            </lx-text-field>
+			        </form>
+			    </div>
+			</div>
+		</section>
+
+		<section>
+			<div flex-item class="mt++">
+			        <ul class="list mt++" flex-container="row" flex-align="center center">
+			            <li class="list-row list-row--has-separator">
+			                    <i class="icon icon--l icon--grey icon--circled mdi mdi-folder"></i>
+			            </li>
+			            <li class="list-row list-row--has-separator">
+			                    <i class="icon icon--l icon--blue icon--circled mdi mdi-file"></i>
+			            </li>
+			            <li class="list-row list-row--has-separator">
+			                <i class="icon icon--l icon--green icon--circled mdi mdi-plus"></i>
+			            </li>
+			        </ul>
+			</div>
+		</section>
+		<footer>
+			
+		</footer>
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/velocity/velocity.js"></script>
+		<script src="bower_components/moment/min/moment-with-locales.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/lumx/dist/lumx.js"></script>
+		<script>
+
+        angular.module('myApp', ['lumx']);
+
+    	</script>
+	</body>
+</html>
